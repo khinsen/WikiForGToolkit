@@ -1,0 +1,3 @@
+accessing
+initialWikiPageContents
+	^ '!New page'

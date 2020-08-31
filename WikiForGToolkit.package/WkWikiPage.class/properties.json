@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "WikiForGToolkit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wiki",
+		"name",
+		"text"
+	],
+	"name" : "WkWikiPage",
+	"type" : "normal"
+}

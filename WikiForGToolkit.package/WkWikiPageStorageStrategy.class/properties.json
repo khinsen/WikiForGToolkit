@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GtStorageStrategy",
+	"category" : "WikiForGToolkit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"container",
+		"name"
+	],
+	"name" : "WkWikiPageStorageStrategy",
+	"type" : "normal"
+}

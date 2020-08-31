@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GtPhlowTool",
+	"category" : "WikiForGToolkit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wiki",
+		"pageName"
+	],
+	"name" : "WkWikiTool",
+	"type" : "normal"
+}
