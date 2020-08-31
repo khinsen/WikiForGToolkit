@@ -4,28 +4,10 @@ baseline: spec
 	
 	spec for: #common do: [
 		spec
-			baseline: 'DataFrame' with: [ spec repository: 'github://PolyMathOrg/DataFrame/src' ];
-			baseline: 'PolyMath' with: [ spec repository: 'github://PolyMathOrg/PolyMath/src' ];
-			baseline: 'Roassal2' with: [ spec repository: 'github://ObjectProfile/Roassal2/src' ];
-			baseline: 'SingletonTrait' with: [ spec repository: 'github://khinsen/SingletonTrait' ].
-		
-		spec
-			package: 'ActivePapers' with: [ spec requires: #('ActivePapers-Wiki' 'SingletonTrait')];
-			package: 'ActivePapers-Wiki';
-			package: 'ActivePapersExamples' with: [ spec requires: #('ActivePapers' 'DataFrame' 'PolyMath' 'Roassal2')] ].
-
-	spec for: #gtoolkit do: [
-		spec
-			baseline: 'IPFSForGToolkit'
-			with: [ spec repository: 'github://khinsen/ipfs-pharo/src' ].
-		spec
-			package: 'ActivePapers' with: [ spec requires: #('IPFSForGToolkit')] ].
+			package: 'WikiForGToolkit'. ]
 
 	spec for: #'non-gtoolkit' do: [
 		spec
-			baseline: 'GToolkit' with: [ spec repository: 'github://feenkcom/gtoolkit:release/src' ];
-			baseline: 'IPFS' with: [ spec 
-				repository: 'github://khinsen/ipfs-pharo/src';
-				loads: #('IPFS' 'IPFS-GToolkit') ].
+			baseline: 'GToolkit' with: [ spec repository: 'github://feenkcom/gtoolkit:release/src' ].
 		spec
-			package: 'ActivePapers' with: [ spec requires: #('GToolkit' 'IPFS')] ].
+			package: 'WikiForGToolkit' with: [ spec requires: #('GToolkit')] ]
