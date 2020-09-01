@@ -1,7 +1,7 @@
 accessing
-wiki: anIpfsWiki page: aSymbol
-	wiki := anIpfsWiki.
+wiki: aWiki page: aSymbol
+	wiki := aWiki wiki.
 	pageName := aSymbol.
 	titleEditorElement text: wiki title.
 	pageNameEditorElement text: pageName asString.
-	documenter ipfsDocument: (wiki pageNamed: pageName); read
+	documenter wiki: wiki page: pageName; read

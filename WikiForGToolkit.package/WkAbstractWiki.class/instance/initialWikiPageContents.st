@@ -1,3 +1,3 @@
-accessing
+contents
 initialWikiPageContents
 	^ '!New page'

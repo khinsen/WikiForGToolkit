@@ -1,3 +1,3 @@
 accessing
-wiki: anIpfsWiki
-	self wiki: anIpfsWiki page: #Main
+wiki: aWiki
+	self wiki: aWiki page: #Main

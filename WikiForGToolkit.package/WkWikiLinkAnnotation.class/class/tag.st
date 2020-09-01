@@ -1,3 +1,3 @@
 rendering
 tag
-	^ #ipfsWikiPage
+	^ #wikiPage

@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "GtAnnotation",
-	"category" : "WikiForGToolkit",
+	"super" : "WkAbstractWiki",
+	"category" : "WikiForGToolkit-WikiForGToolkit",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"referencedPage"
+		"wikiClass"
 	],
-	"name" : "WkWikiLinkAnnotation",
+	"name" : "WkClassWiki",
 	"type" : "normal"
 }

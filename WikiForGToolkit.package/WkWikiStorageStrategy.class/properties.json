@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "<historical>",
-	"super" : "GtAnnotation",
+	"commentStamp" : "",
+	"super" : "GtStorageStrategy",
 	"category" : "WikiForGToolkit",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"referencedPage"
+		"pageName",
+		"wiki"
 	],
-	"name" : "WkWikiLinkAnnotation",
+	"name" : "WkWikiStorageStrategy",
 	"type" : "normal"
 }

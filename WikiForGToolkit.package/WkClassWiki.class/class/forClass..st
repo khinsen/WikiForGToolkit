@@ -1,5 +1,5 @@
 instance creation
-forWiki: aWiki
+forClass: aClass
 	^ self new
-		wiki: aWiki;
+		wikiClass: aClass;
 		yourself

@@ -1,5 +1,5 @@
 instance creation
-forWiki: anIpfsWiki page: aSymbol
+forWiki: aWiki page: aSymbol
 	^ self new
-		wiki: anIpfsWiki page: aSymbol;
+		wiki: aWiki page: aSymbol;
 		yourself
