@@ -1,14 +1,16 @@
 accessing - parameter values
 createReferencedPage
-	^ self referencedPage ifNil: [ referencedPage := self utility 
-		valueOf: self constants nameParameterName
-		in: self parameters
-		value: [ :aValue |
-					self isInWiki
-						ifTrue: [ | pageName |
-									pageName := aValue asSymbol.
-								 	self wiki createOrRetrievePageNamed: pageName.
-									pageName ]
-						ifFalse: [ nil ] ]
-		emptyValue: [ nil ] 
-		defaultValue: [ nil ] ]
+	self isInWiki ifFalse: [ ^ nil ].
+	^ referencedPage ifNil: [
+		self parameters
+			at: #name
+			ifPresent: [ :name |
+				"If the annotation has a 'name' parameter
+				without a value, it appears as a Boolean
+				of value true, so we must test for isString."
+				name isString
+					ifTrue: [ | pageName |
+								pageName := name asSymbol.
+								self wiki createOrRetrievePage: pageName.
+								pageName ] ]
+			ifAbsent: [ nil ] ]

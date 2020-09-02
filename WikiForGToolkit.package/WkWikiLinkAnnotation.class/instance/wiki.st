@@ -1,3 +1,6 @@
 accessing
 wiki
-	^ self wikiPage ifNotNil: [ :page | page wiki ]
+	| storage |
+	storage := self gtDocument storage.
+	[ ^ storage wiki ]
+	on: MessageNotUnderstood do: [ ^ nil ].
