@@ -9,8 +9,8 @@
 		"wiki",
 		"documenter",
 		"pageName",
-		"titleEditorElement",
-		"pageNameEditorElement"
+		"pageNameEditor",
+		"titleEditor"
 	],
 	"name" : "WkWikiBrowser",
 	"type" : "normal"

@@ -18,11 +18,12 @@ buildHeader
 				c grid horizontal alignLeft.
 				c grid vertical alignBottom ]
 			yourself).
-	titlebar addChild: pageNameEditorElement.
-	pageNameEditorElement constraintsDo: [ :c |
+
+	titlebar addChildren: (self buildPageNameLabel).
+	pageNameEditor constraintsDo: [ :c |
 		c grid horizontal alignLeft ].
-	titlebar addChild: titleEditorElement.
-	titleEditorElement constraintsDo: [ :c |
+	titlebar addChild: (self buildTitleEditor).
+	titleEditor constraintsDo: [ :c |
 		c grid horizontal alignRight ].
 	header addChild: titlebar.
 

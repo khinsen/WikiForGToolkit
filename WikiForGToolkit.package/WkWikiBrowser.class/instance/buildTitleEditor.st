@@ -1,6 +1,6 @@
 initialization
-initializePageNameEditorElement
-	pageNameEditorElement := BrEditableLabel new
+buildTitleEditor
+	titleEditor := BrEditableLabel new
 		look: (BrGlamorousEditableLabelLook new
 				defaultBackground: Color transparent;
 				glamorousRegularFont;
@@ -9,10 +9,11 @@ initializePageNameEditorElement
 			c horizontal fitContent.
 			c vertical fitContent];
 		text: 'Untitled'.
-	pageNameEditorElement editor
+
+	titleEditor editor
 		when: BrTextEditorModifiedEvent 
 		do: [ :anEvent |
-			| newName |
-			newName := anEvent text asString asSymbol.
-			self wiki renamePage: pageName to: newName.
-			pageName := newName ]
+			self wiki isTitleEditable ifTrue:
+				[ self wiki title: anEvent text asString ] ].
+
+	^ titleEditor

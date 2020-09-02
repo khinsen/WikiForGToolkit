@@ -1,5 +1,5 @@
 accessing
 page: aSymbol
 	pageName := aSymbol.
-	pageNameEditorElement text: pageName asString.
+	pageNameEditor text: pageName asString.
 	documenter wiki: wiki page: pageName; read
