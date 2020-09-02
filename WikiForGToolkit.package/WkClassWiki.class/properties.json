@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "WkAbstractWiki",
-	"category" : "WikiForGToolkit-WikiForGToolkit",
+	"category" : "WikiForGToolkit-ClassWiki",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
