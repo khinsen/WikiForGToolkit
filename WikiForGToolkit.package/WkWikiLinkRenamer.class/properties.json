@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PRNodeTransformer",
+	"category" : "WikiForGToolkit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nameTransformation",
+		"hasModifiedDoc"
+	],
+	"name" : "WkWikiLinkRenamer",
+	"type" : "normal"
+}

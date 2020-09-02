@@ -1,5 +1,5 @@
 initialization
-buildPageNameLabel
+buildPageNameEditor
 	| acceptButton |
 	pageNameEditor := BrEditableLabel new
 		look: (BrGlamorousEditableLabelLook new
@@ -22,10 +22,10 @@ buildPageNameLabel
 		constraintsDo: [ :c |
 				c grid horizontal alignLeft.
 				c grid vertical alignCenter ];
-		action: [ self renamePage ];
+		action: [ self renamePage. acceptButton visibility: BlVisibility gone ];
 		addShortcut: (BlShortcut new
 			combination: BlKeyCombination return;
-			action: [ self renamePage ]).
+			action: [ self renamePage. acceptButton visibility: BlVisibility gone ]).
 
 	pageNameEditor editor
 		when: BrTextEditorModifiedEvent 
