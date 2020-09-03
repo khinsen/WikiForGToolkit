@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "WikiForGToolkit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wiki",
+		"class"
+	],
+	"name" : "WkClassWikiTest",
+	"type" : "normal"
+}
