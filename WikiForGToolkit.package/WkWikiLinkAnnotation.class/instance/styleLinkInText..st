@@ -7,7 +7,7 @@ styleLinkInText: aBlRope
 					with: (BlTextForegroundAttribute new paint: linkColor)
 					"Underline it in the same color when the cursor hovers over it"
 					with: (BrTextHoverStylableAttribute new
-								attribute: (BlTextUnderlineAttribute new paint: linkColor))
+								attribute: (BlTextUnderlineAttribute new color: linkColor))
 					"Define the click action"
 					with: (BrTextClickAttribute new
 								beNotOverwritableByStyler;
