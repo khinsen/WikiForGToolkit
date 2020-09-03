@@ -1,0 +1,3 @@
+contents
+initialPageContents
+	^ '!New page'

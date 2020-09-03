@@ -1,3 +1,3 @@
 accessing
-methodSelectorForWikiPage: aSymbol
+methodSelectorForPage: aSymbol
 	^ ('wikiPage', aSymbol) asSymbol

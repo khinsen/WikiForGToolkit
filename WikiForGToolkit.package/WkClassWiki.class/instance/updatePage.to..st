@@ -6,7 +6,7 @@ updatePage: aSymbol to: aString
 		ifTrue: [ self wikiClass comment: aString. ^ self ].
 
 	code := String streamContents: [ :s |
-		s nextPutAll: (self methodSelectorForWikiPage: aSymbol).
+		s nextPutAll: (self methodSelectorForPage: aSymbol).
 		s crtab; nextPutAll: '"This method was automatically generated."'.
 		s crtab; nextPutAll: '<wikiPage: '; nextPutAll: aSymbol storeString; nextPutAll: '>'.
 		s crtab; nextPutAll: '^ '.

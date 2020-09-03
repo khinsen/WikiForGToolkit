@@ -1,3 +1,0 @@
-contents
-initialWikiPageContents
-	^ '!New page'
