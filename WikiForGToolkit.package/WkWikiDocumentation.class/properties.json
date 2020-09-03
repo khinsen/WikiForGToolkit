@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "TWkClassWiki classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WkWikiDocumentation",
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"traitcomposition" : "TWkClassWiki",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "WikiForGToolkit-Documentation"
+}
