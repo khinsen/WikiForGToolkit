@@ -10,5 +10,6 @@ The main user interface element is ${class:name=WkWikiBrowser}$. It is a ${class
 
 The class ${class:name=WkWikiLinkAnnotation}$ represents wiki links in a parsed Pillar document (see ${class:name=PRDocument}$ and subclasses). It turns the annotation markup into an active link and adds the button that is displayed in the usual markup-free display of text. See in particular ${method:name=WkWikiLinkAnnotation>>#styleLinkInText:}$.
 
-Finally, ${class:name=WkWikiTool}$ is a small wrapper around ${class:name=WkWikiBrowser}$ that acts as a tool for GToolkit, i.e. it displays a new pane containing a browser. See the button action in ${method:name=WkWikiLinkAnnotation>>#styleTextWithMarkup:}$ for an example of how it is used.
+${class:name=WkWikiTool}$ is a small wrapper around ${class:name=WkWikiBrowser}$ that acts as a tool for GToolkit, i.e. it displays a new pane containing a browser. See the button action in ${method:name=WkWikiLinkAnnotation>>#styleTextWithMarkup:}$ for an example of how it is used.
+Moving on to the internals, ${class:name=WkWikiLinkRenamer}$ is a utility class used in ${method:name=WkWikiBrowser>>#renamePage}$, and ${class:name=WkWikiStorageStrategy}$ is part of the interface to ${class:name=GtDocumenter}$, and thereby also provides access to the underlying wiki to ${class:name=WkWikiLinkAnnotation}$.
 '
