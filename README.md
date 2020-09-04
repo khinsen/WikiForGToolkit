@@ -2,6 +2,8 @@
 
 This package adds multi-page Wikis to the [Glamorous Toolkit](https://gtoolkit.com).
 
+![screenshot](./Wiki.png)
+
 Its core is an abstract Wiki class and a Wiki browser building on its API. Different Wikis with different data storage modes can then be implemented as subclasses. For now only one concrete Wiki implementation is provided, which adds a documentation Wiki to a class.
 
 Wiki links are implemented as Pillar annotations of the form `${wikiPage:name=Foo}$`. New Wiki pages are created by following a link to a non-existing page.
