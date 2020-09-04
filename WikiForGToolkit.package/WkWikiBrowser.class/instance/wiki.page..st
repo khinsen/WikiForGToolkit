@@ -10,6 +10,7 @@ wiki: aWiki page: aSymbol
 	pageName = #Main
 		ifTrue: [ titleEditor beReadOnlyWithSelection ]
 		ifFalse: [ titleEditor beEditable ].
+	titleEditor switchToLabel.
 	documenter
 		wiki: wiki page: pageName;
 		read

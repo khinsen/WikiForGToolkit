@@ -16,7 +16,7 @@ buildHeader
 		(self buildPageSelectorButton
 			constraintsDo: [ :c |
 				c grid horizontal alignLeft.
-				c grid vertical alignBottom ]
+				c grid vertical alignCenter ]
 			yourself).
 
 	titlebar addChildren: (self buildPageNameEditor).
