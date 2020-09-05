@@ -1,3 +1,3 @@
 visitor
 accept: aVisitor
-	^ aVisitor visitIpfsWikiLinkAnnotation: self
+	^ aVisitor visitWikiLinkAnnotation: self

@@ -1,0 +1,3 @@
+*WikiForGToolkit
+visitWikiLinkAnnotation: aWikiLinkAnnotation
+	self visitAnnotation: aWikiLinkAnnotation
