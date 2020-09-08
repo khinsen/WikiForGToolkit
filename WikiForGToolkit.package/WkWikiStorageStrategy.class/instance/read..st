@@ -1,3 +1,3 @@
 actions
 read: aDocument
-	aDocument text: (wiki page: pageName)
+	aDocument text: (wiki page: pageName) text
