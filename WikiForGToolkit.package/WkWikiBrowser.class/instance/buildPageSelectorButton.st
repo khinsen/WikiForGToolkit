@@ -2,15 +2,15 @@ initialization
 buildPageSelectorButton
 	|  dropdownLook dropdownButton |
 	dropdownButton :=
-		BrButton new
+		[ BrButton new
 			look: BrGlamorousButtonWithIconLook
 				- BrGlamorousButtonWithLabelTooltipLook
 				- BrGlamorousButtonExteriorLook;
 			icon: BrGlamorousIcons hamburger;
-			yourself.
+			yourself ].
 	dropdownLook :=
 		BrGlamorousWithDropdownLook
-			handle: [ dropdownButton ]
+			handle:  dropdownButton
 			content: [ self buildPageList ].
 	^ BrButton new
 		label: 'Wiki Pages';
