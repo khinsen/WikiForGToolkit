@@ -4,7 +4,7 @@ wikiPageClassWiki
 	<wikiPage: #ClassWiki>
 	^ '!Class wikis
 
-A class wiki is part of a class. Its main page is the class comment, and additional pages are stored in special class-side methods whose name starts with `wikiPage`. For example, this very page is stored in ${method:name=WkWikiDocumentation class >>#wikiPageClassWiki}$. The reason for this peculiar storage scheme is that all the Wiki contents are Pharo source code, and this stored in Git repositories along with any other code. 
+A class wiki stores its pages in a class. Its main page is the class comment, and additional pages are stored in special class-side methods whose name starts with `wikiPage`. For example, this very page is stored in ${method:name=WkWikiDocumentation class >>#wikiPageClassWiki}$. The reason for this peculiar storage scheme is that all the Wiki contents are Pharo source code, and thus stored in Git repositories along with any other code. 
 
 The wiki page methods are created and updated by the Wiki browser, and it''s best not to modify them by other means.
 
