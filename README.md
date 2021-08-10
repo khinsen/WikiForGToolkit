@@ -1,5 +1,8 @@
 # A Wiki infrastructure for the GToolkit environment
 
+**This package is deprecated.** It depends on deprecated classes in GToolkit, and its functionality has been superseded by the Lepiter package that has been added to GToolkit in 2021.
+
+
 This package adds multi-page Wikis to the [Glamorous Toolkit](https://gtoolkit.com).
 
 ![screenshot](./Wiki.png)
